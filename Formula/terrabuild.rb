@@ -2,26 +2,26 @@
 class Terrabuild < Formula
   desc "Seamless CI/CD tool for building and deploying monorepos."
   homepage "https://terrabuild.io"
-  version "0.122.0"
+  version "0.122.1"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.122.0/terrabuild-0.122.0-darwin-x64.zip"
-    sha256 "6439a3edcb6c12635d82f49039be9c90177968fbdd4d2a02a651da1e0ae774fe"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.122.1/terrabuild-0.122.1-darwin-x64.zip"
+    sha256 "816d327e9fc8c49100e6036ccba0a20a092ec5633571735e56b06cc46f993c1b"
   end
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.122.0/terrabuild-0.122.0-darwin-arm64.zip"
-    sha256 "35d4469b76ac0dc4951bb3f1a9deb5ae37fa33cdd0a07ef53b71ae27b7c84d2d"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.122.1/terrabuild-0.122.1-darwin-arm64.zip"
+    sha256 "56811d59002f0e63f017b52565df59c81f2e5e3fd9f44aa5a75c3dea44aa6911"
   end
 
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.122.0/terrabuild-0.122.0-linux-x64.zip"
-    sha256 "b23bfa70068c3f2b79252d017d633232270ac0fca0d5a3ad622bb70dd96db480"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.122.1/terrabuild-0.122.1-linux-x64.zip"
+    sha256 "f8f612bcbba9d1e10e376a2af27a6a4d154af93870a4c8cec851728ea58e75ca"
   end
 
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.122.0/terrabuild-0.122.0-linux-arm64.zip"
-    sha256 "fe00f6d4f5452eebfa954d2bf02ff0a571983629043731d1f17b4f2a2939fc39"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.122.1/terrabuild-0.122.1-linux-arm64.zip"
+    sha256 "5d01afda697fd530059606d81c9f535951bd8bd077d9181b423eb22dbdeb436d"
   end
 
   conflicts_with "terrabuild"
