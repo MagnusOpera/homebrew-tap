@@ -2,26 +2,26 @@
 class TerrabuildBeta < Formula
   desc "Seamless CI/CD tool for building and deploying monorepos."
   homepage "https://terrabuild.io"
-  version "0.135.13-beta"
+  version "0.135.14-beta"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.135.13-beta/terrabuild-0.135.13-beta-darwin-x64.zip"
-    sha256 "b6f370b3ebeb78da4b6c587b4844605a19a2ff3896d12dbba68bbec824c36d4b"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.135.14-beta/terrabuild-0.135.14-beta-darwin-x64.zip"
+    sha256 "44c0f43a52e24b7fd7ec170b5bd4c8fdcf5471595d75999140a0f6ae98cf7cf9"
   end
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.135.13-beta/terrabuild-0.135.13-beta-darwin-arm64.zip"
-    sha256 "6bd38ba4565ffa540abfb6512ab33a99145da23277c34b98792896a042567925"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.135.14-beta/terrabuild-0.135.14-beta-darwin-arm64.zip"
+    sha256 "c13d6475e781ecdce6cb75a11b2748d1051e392a68f3a54b2e865fe09cb780f8"
   end
 
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.135.13-beta/terrabuild-0.135.13-beta-linux-x64.zip"
-    sha256 "dd9aaace04dcaaa797bbdca62fd83bbeaab18dad1dc1513307171d1f1dd9c704"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.135.14-beta/terrabuild-0.135.14-beta-linux-x64.zip"
+    sha256 "e5917b81d322899f4d4a2bbc0c40e19d635a70729148c59a34bdc50be70f90bc"
   end
 
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.135.13-beta/terrabuild-0.135.13-beta-linux-arm64.zip"
-    sha256 "4afee300ce732e07e95a2c32763c59f1160ab8af9bb0c9eefaef36eeae1e4cbe"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.135.14-beta/terrabuild-0.135.14-beta-linux-arm64.zip"
+    sha256 "b5cd6c9ba58719f852cf13a2626544ebfcbfab8b7b704bcbcb876c36b087d1c8"
   end
 
   conflicts_with "terrabuild"
