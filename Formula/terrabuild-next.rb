@@ -2,26 +2,26 @@
 class TerrabuildNext < Formula
   desc "Seamless CI/CD tool for building and deploying monorepos."
   homepage "https://terrabuild.io"
-  version "0.135.23-next"
+  version "0.135.24-next"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.135.23-next/terrabuild-0.135.23-next-darwin-x64.zip"
-    sha256 "b7afdc987954cf8e88d4b2095fbe4ef3adba59242c7257ffb1b0c5ab651afa69"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.135.24-next/terrabuild-0.135.24-next-darwin-x64.zip"
+    sha256 "753ba5239fde9213f77725915f6b97d595e54a0e51dd9a82a28d22dff1a096cc"
   end
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.135.23-next/terrabuild-0.135.23-next-darwin-arm64.zip"
-    sha256 "833222fcdf5f7db0174144902a892bf51327851ab4d4c572ba5aa94fc31031e9"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.135.24-next/terrabuild-0.135.24-next-darwin-arm64.zip"
+    sha256 "614fc450251228307cb9ed94894beece5aee381ad99c541f298f30de784202fe"
   end
 
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.135.23-next/terrabuild-0.135.23-next-linux-x64.zip"
-    sha256 "fa31647235d87205ab816ed258c4728e593e8ab813ba3bcb43880a5e5242a32f"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.135.24-next/terrabuild-0.135.24-next-linux-x64.zip"
+    sha256 "332903c6528a6982a680fb0a8871aa6b126401d53590390cb37a6d0fb6e7f46f"
   end
 
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.135.23-next/terrabuild-0.135.23-next-linux-arm64.zip"
-    sha256 "8d009cb84a5955ba48e8a2fb6365a7f5092a1a349c41ed920e5079c307a2c1cd"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.135.24-next/terrabuild-0.135.24-next-linux-arm64.zip"
+    sha256 "cc9b27b24deee6cd5b287b7250211ab91218396e1dc655f8438e92c3ef874dee"
   end
 
   conflicts_with "terrabuild"
