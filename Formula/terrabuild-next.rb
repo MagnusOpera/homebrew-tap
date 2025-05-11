@@ -2,31 +2,30 @@
 class TerrabuildNext < Formula
   desc "Seamless CI/CD tool for building and deploying monorepos."
   homepage "https://terrabuild.io"
-  version "0.135.19-next"
+  version "0.135.20-next"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.135.19-next/terrabuild-0.135.19-next-darwin-x64.zip"
-    sha256 "fc5986fd9a6f45f2e29c4269ae3ec0c6cb488abd8c9c28f3c2c5f1b273853059"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.135.20-next/terrabuild-0.135.20-next-darwin-x64.zip"
+    sha256 "0fd8c4fcd035315f41bfb1c00f2c947ead2bd273f1f6dc63602e82125de5426f"
   end
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.135.19-next/terrabuild-0.135.19-next-darwin-arm64.zip"
-    sha256 "275b5a39521830e12543a28176e06e99b3740f72f320fec046539e5b31b4b439"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.135.20-next/terrabuild-0.135.20-next-darwin-arm64.zip"
+    sha256 "c136686b1376513bc91b452f9455fd112d3f8b173042a1605419201a30914c43"
   end
 
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.135.19-next/terrabuild-0.135.19-next-linux-x64.zip"
-    sha256 "48d6d0873de8d0579822e79fbd2a4fec5f8e017122c669205f6f23aab85b76a8"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.135.20-next/terrabuild-0.135.20-next-linux-x64.zip"
+    sha256 "7e73214456b515afe923fefd68e8538e55ff661011ae805cf121f74eb8d1d4ee"
   end
 
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.135.19-next/terrabuild-0.135.19-next-linux-arm64.zip"
-    sha256 "5d37fe926da389a44f3c0b7cfbe4f2e46573262179bab705e9eec625c2dd8242"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.135.20-next/terrabuild-0.135.20-next-linux-arm64.zip"
+    sha256 "4a40e7a89a09f02299148b729ae77d853bff039d004834ee4b19cb9df8335953"
   end
 
   conflicts_with "terrabuild"
-  conflicts_with "terrabuild-alpha"
-  conflicts_with "terrabuild-beta"
+  conflicts_with "terrabuild-next"
 
   def install
     bin.install "terrabuild"
