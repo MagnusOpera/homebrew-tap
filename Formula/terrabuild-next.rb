@@ -2,26 +2,26 @@
 class TerrabuildNext < Formula
   desc "Seamless CI/CD tool for building and deploying monorepos."
   homepage "https://terrabuild.io"
-  version "0.185.4-next"
+  version "0.185.5-next"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.185.4-next/terrabuild-0.185.4-next-darwin-x64.zip"
-    sha256 "0404af65a219795e711f3b267846cd45b1a8f19cf04962197f335d26651a7e9a"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.185.5-next/terrabuild-0.185.5-next-darwin-x64.zip"
+    sha256 "60d4a7721f21cfaf96c4305a0ec8b564f61bce5ee6569026494dd3c9c9fbf1b1"
   end
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.185.4-next/terrabuild-0.185.4-next-darwin-arm64.zip"
-    sha256 "59917864a65f4c40f138bb4afd2b30c73ee69f48c6bb1f30b5047f47abdaf8a1"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.185.5-next/terrabuild-0.185.5-next-darwin-arm64.zip"
+    sha256 "915203a28fe6cda8f29a32ac0a9106e4cd5546ec7f0977973dd45304056e2f5c"
   end
 
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.185.4-next/terrabuild-0.185.4-next-linux-x64.zip"
-    sha256 "64a5099d4723cd9797459f864e26049d668c09eab9631dfda8cd915f5438780d"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.185.5-next/terrabuild-0.185.5-next-linux-x64.zip"
+    sha256 "0600860ed4940b7dccf28ac9bd98180731da5be1bc4f2a06feecd3738d4dab68"
   end
 
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.185.4-next/terrabuild-0.185.4-next-linux-arm64.zip"
-    sha256 "e3050167ddc25eab3c17b706ecb3b069b142fe2c8099d370fb4717ede1685c75"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.185.5-next/terrabuild-0.185.5-next-linux-arm64.zip"
+    sha256 "294ae87443cf4bf282743c939b758332653d27578a479557da4e5331c5611b94"
   end
 
   conflicts_with "terrabuild"
