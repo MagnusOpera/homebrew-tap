@@ -2,26 +2,26 @@
 class TerrabuildNext < Formula
   desc "Seamless CI/CD tool for building and deploying monorepos."
   homepage "https://terrabuild.io"
-  version "0.185.10-next"
+  version "0.185.11-next"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.185.10-next/terrabuild-0.185.10-next-darwin-x64.zip"
-    sha256 "04cf82a9bee156000811a4655170d5322e5b3ebdef1c97fdbdc13e83de870c79"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.185.11-next/terrabuild-0.185.11-next-darwin-x64.zip"
+    sha256 "358511690b66855ed7e0e51729726cf0414c508ab3181f7ec82fccf8a3be8f6f"
   end
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.185.10-next/terrabuild-0.185.10-next-darwin-arm64.zip"
-    sha256 "5b9d96d8f15a900fb0dd75471165a66b84cd2c73106a674f855a0611ba1f9bf3"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.185.11-next/terrabuild-0.185.11-next-darwin-arm64.zip"
+    sha256 "1dafa58612c531c7c8a89c2cb431ae446a8913e18a3fcf7c18396c29726394a7"
   end
 
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.185.10-next/terrabuild-0.185.10-next-linux-x64.zip"
-    sha256 "7d95ba382391c6b1e63d99f835389a4cb6efab4890aecf923ba98b04d1205ebd"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.185.11-next/terrabuild-0.185.11-next-linux-x64.zip"
+    sha256 "d9dc4dcf1c9d11d4cfa64a0287b13d8f289fb4232c0ade5f2ef3f9c4443fa1d7"
   end
 
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.185.10-next/terrabuild-0.185.10-next-linux-arm64.zip"
-    sha256 "948c102dde1b0d69e1d2f6257d33ff5a076fc534294193bdfc43e5bebc4bc849"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.185.11-next/terrabuild-0.185.11-next-linux-arm64.zip"
+    sha256 "7129ba923ae431d5b9443b5ca65d679e5119fc32de8ae728532ff84e21616bd6"
   end
 
   conflicts_with "terrabuild"
