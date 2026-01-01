@@ -2,26 +2,26 @@
 class TerrabuildNext < Formula
   desc "Seamless CI/CD tool for building and deploying monorepos."
   homepage "https://terrabuild.io"
-  version "0.185.13-next"
+  version "0.186.2-next"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.185.13-next/terrabuild-0.185.13-next-darwin-x64.zip"
-    sha256 "c9d1a4aab7667842e6fdb8467d249b80485682807be8cc7527d7c23e3df53f3d"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.186.2-next/terrabuild-0.186.2-next-darwin-x64.zip"
+    sha256 "51a71fc97f6660632febadfc1c2d8ef3cf5c7c96dfecdcb2781b795ea2275a4b"
   end
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.185.13-next/terrabuild-0.185.13-next-darwin-arm64.zip"
-    sha256 "b69405ad84329294fc387cc835d9e08b930c2429c8266ccc1ba34678c2b74148"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.186.2-next/terrabuild-0.186.2-next-darwin-arm64.zip"
+    sha256 "bd9fb2a74c131d7457eec518f92807f1224feb1bb53be673a1c417b3e74751b1"
   end
 
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.185.13-next/terrabuild-0.185.13-next-linux-x64.zip"
-    sha256 "3ecc1e5daecadf4a566e9bf9ae9473c06aa1ffb21906c20366743d41889c3ca5"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.186.2-next/terrabuild-0.186.2-next-linux-x64.zip"
+    sha256 "49ce719412f1ff27afbed33c12304c4c6a23e1ed283036f4373030c0cf3f730c"
   end
 
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.185.13-next/terrabuild-0.185.13-next-linux-arm64.zip"
-    sha256 "4e5141f773b8e13b9e456edb50a9a1097c00f8a26c0700b22e89e81b06d4b033"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.186.2-next/terrabuild-0.186.2-next-linux-arm64.zip"
+    sha256 "1687499c34623fb8515a169911d18c866d34ea97b65fdc679d18d623316fda13"
   end
 
   conflicts_with "terrabuild"
