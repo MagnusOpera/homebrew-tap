@@ -2,36 +2,33 @@
 class TerrabuildNext < Formula
   desc "Seamless CI/CD tool for building and deploying monorepos."
   homepage "https://terrabuild.io"
-  version "0.186.3-next"
+  version "0.186.4-next"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.186.3-next/terrabuild-0.186.3-next-darwin-x64.zip"
-    sha256 "26151ab075bcf9607135e4e39236ea2040ecf703ed5f3249cf5a2239747ad924"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.186.4-next/terrabuild-0.186.4-next-darwin-x64.zip"
+    sha256 "bfe155dd0c223b6d4547fedbfba34e63d324215109797e8a18b5ca80d9c332a0"
   end
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.186.3-next/terrabuild-0.186.3-next-darwin-arm64.zip"
-    sha256 "f520e14a1a055e40fcf22fd10c9924e537375c6b7ad96cc85420f234cebda86a"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.186.4-next/terrabuild-0.186.4-next-darwin-arm64.zip"
+    sha256 "9a1095e173a00c988f16fd8f1a911dadaf2f315f6fcecf13c45c37e3796a6892"
   end
 
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.186.3-next/terrabuild-0.186.3-next-linux-x64.zip"
-    sha256 "2054e3391a9b08f5948140ac57b417f12ad42ec05ea9c8521bb58216911d63d3"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.186.4-next/terrabuild-0.186.4-next-linux-x64.zip"
+    sha256 "8ffbc6fa7a473a4f2e78c9a5e5598e08350ba9c0e874238ecfa6e41b508311c5"
   end
 
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.186.3-next/terrabuild-0.186.3-next-linux-arm64.zip"
-    sha256 "7f766fc8c2082033d5026e5314716d864af63269970f21273d2e8dca00fb49ec"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.186.4-next/terrabuild-0.186.4-next-linux-arm64.zip"
+    sha256 "ea391511bb3ba9594fc2a7084a21307ab4cf671a001ddb394f84b14cd5848b45"
   end
 
-  conflicts_with "terrabuild"
-  conflicts_with "terrabuild-next"
-
   def install
-    bin.install "terrabuild"
+    bin.install "terrabuild" => name
   end
 
   test do
-    system "#{bin}/terrabuild version"
+    system bin/name, "version"
   end
 end
