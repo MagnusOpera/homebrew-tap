@@ -2,36 +2,33 @@
 class Terrabuild < Formula
   desc "Seamless CI/CD tool for building and deploying monorepos."
   homepage "https://terrabuild.io"
-  version "0.185.18"
+  version "0.185.19"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.185.18/terrabuild-0.185.18-darwin-x64.zip"
-    sha256 "71a64f0e3cde93899bd7a9b902ba8169db6efb2aa3d7b5a9a08fba8aaadb1818"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.185.19/terrabuild-0.185.19-darwin-x64.zip"
+    sha256 "71cc61c048609e85a0185c23ffe19ce7fc29feade9beeb45318f2237c82d3202"
   end
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.185.18/terrabuild-0.185.18-darwin-arm64.zip"
-    sha256 "605b16fe93c1b67aba4b1e3af692168eb88d0e6f9386c005207c679164769985"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.185.19/terrabuild-0.185.19-darwin-arm64.zip"
+    sha256 "66e625aeec25d9755ca66a48068f53bcb31af60e36c765ce80d90a3408147c0d"
   end
 
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.185.18/terrabuild-0.185.18-linux-x64.zip"
-    sha256 "460e88d67e583cbbe199caee596fb1df0575d38fa3279ea93c9971a48858604a"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.185.19/terrabuild-0.185.19-linux-x64.zip"
+    sha256 "e9fdc18e6ab96c6251d2a99c843252fd3eaaef566d715ac15485504e0c8695d0"
   end
 
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.185.18/terrabuild-0.185.18-linux-arm64.zip"
-    sha256 "2ea75735afbcd4c2eb8b35a0f6142ad35340be6cf2220783566a7d5495f81e8c"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.185.19/terrabuild-0.185.19-linux-arm64.zip"
+    sha256 "7388510739a6df17f431926af7e1be19cd8d6fe0964df0dbbf82ad95806fb08d"
   end
 
-  conflicts_with "terrabuild"
-  conflicts_with "terrabuild-next"
-
   def install
-    bin.install "terrabuild"
+    bin.install "terrabuild" => name
   end
 
   test do
-    system "#{bin}/terrabuild version"
+    system bin/name, "version"
   end
 end
