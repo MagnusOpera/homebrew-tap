@@ -2,26 +2,26 @@
 class TerrabuildNext < Formula
   desc "Seamless CI/CD tool for building and deploying monorepos."
   homepage "https://terrabuild.io"
-  version "0.188.15-next"
+  version "0.188.16-next"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.15-next/terrabuild-0.188.15-next-darwin-x64.zip"
-    sha256 "c324a4e2b74c753b0300b528f98c86f8cd4ba50c8f2331b91185e3b51adcd678"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.16-next/terrabuild-0.188.16-next-darwin-x64.zip"
+    sha256 "ef205912f56e0191e5784c6d49f28d3c8d6cd4ec5b6ca26d5467f8d58f8d98e3"
   end
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.15-next/terrabuild-0.188.15-next-darwin-arm64.zip"
-    sha256 "97d4cddf26561f45c4c29ef47b43be9ab82ba1cf9acd9783d3e92616d038be09"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.16-next/terrabuild-0.188.16-next-darwin-arm64.zip"
+    sha256 "1ea1f21c330eeeed71578d20c9ec632fa6fc7512a0b6602ca0abc8aa93691c32"
   end
 
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.15-next/terrabuild-0.188.15-next-linux-x64.zip"
-    sha256 "77e5ff4387aeb1829da8f35f87097e6eccb45308ab2d2c8eda3598d3631c45d7"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.16-next/terrabuild-0.188.16-next-linux-x64.zip"
+    sha256 "7c160dd4f3cbc420bf52837eb6b1000f58395d38c14847751b692939a1f12531"
   end
 
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.15-next/terrabuild-0.188.15-next-linux-arm64.zip"
-    sha256 "60d7c7d59729660d9887f97e0bc7b1b1c5de9a1b9b8e54ded747fed94f9c0b38"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.16-next/terrabuild-0.188.16-next-linux-arm64.zip"
+    sha256 "fee1a28dd8d4be30d480ec23fe030ff7a3efa1db99a5559bddb3267e3ab84b18"
   end
 
   def install
