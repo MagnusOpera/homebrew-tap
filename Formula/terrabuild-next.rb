@@ -2,26 +2,26 @@
 class TerrabuildNext < Formula
   desc "Seamless CI/CD tool for building and deploying monorepos."
   homepage "https://terrabuild.io"
-  version "0.188.20-next"
+  version "0.188.21-next"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.20-next/terrabuild-0.188.20-next-darwin-x64.zip"
-    sha256 "28035b688ba054b6a9bf7c6cc76c9353b20a0d34de23ddaf2325ece717754ebf"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.21-next/terrabuild-0.188.21-next-darwin-x64.zip"
+    sha256 "d9f98362e057dc3c3748d0baeb703d39de727c0d14a88ec7b73e48d4b0615684"
   end
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.20-next/terrabuild-0.188.20-next-darwin-arm64.zip"
-    sha256 "6eaf3ec6fa023fdf8d430d27e0dfc35cad03651e8d659d4a1324d178bef22890"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.21-next/terrabuild-0.188.21-next-darwin-arm64.zip"
+    sha256 "63e8f228b6098a79ce79bf144193efdc30c5b561cad192c43cb434954416233a"
   end
 
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.20-next/terrabuild-0.188.20-next-linux-x64.zip"
-    sha256 "0f45f85e6cd15ab56359be96fb0d3ddfd2201933662cba724d63f34195150b6c"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.21-next/terrabuild-0.188.21-next-linux-x64.zip"
+    sha256 "182dde728208b60d410ed3076bd7135fc8c603ed0ce53f8950a9fd903188c004"
   end
 
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.20-next/terrabuild-0.188.20-next-linux-arm64.zip"
-    sha256 "622b930f572957a99df46458444a94931a5eaa272404218657f9fe26cf82cd43"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.21-next/terrabuild-0.188.21-next-linux-arm64.zip"
+    sha256 "a107942cf1837a7bb4ba82493b6fca062475bf1c9cf7945cd2469df9c44d71b4"
   end
 
   def install
