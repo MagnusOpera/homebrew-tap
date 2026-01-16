@@ -2,26 +2,26 @@
 class TerrabuildNext < Formula
   desc "Seamless CI/CD tool for building and deploying monorepos."
   homepage "https://terrabuild.io"
-  version "0.188.14-next"
+  version "0.188.15-next"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.14-next/terrabuild-0.188.14-next-darwin-x64.zip"
-    sha256 "631ab1349473f597a296378f188cd329d5c0d49878c7501981ccbd2e4b11d44f"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.15-next/terrabuild-0.188.15-next-darwin-x64.zip"
+    sha256 "c324a4e2b74c753b0300b528f98c86f8cd4ba50c8f2331b91185e3b51adcd678"
   end
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.14-next/terrabuild-0.188.14-next-darwin-arm64.zip"
-    sha256 "70e9fa09d12be7479a3a20bcff860c0e5a37ad14f88250aba2e77a05a93f4479"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.15-next/terrabuild-0.188.15-next-darwin-arm64.zip"
+    sha256 "97d4cddf26561f45c4c29ef47b43be9ab82ba1cf9acd9783d3e92616d038be09"
   end
 
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.14-next/terrabuild-0.188.14-next-linux-x64.zip"
-    sha256 "e2f49bf3c778ac4403c6c2d5b682f21aae711676462b2d6402a458ef1452a900"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.15-next/terrabuild-0.188.15-next-linux-x64.zip"
+    sha256 "77e5ff4387aeb1829da8f35f87097e6eccb45308ab2d2c8eda3598d3631c45d7"
   end
 
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.14-next/terrabuild-0.188.14-next-linux-arm64.zip"
-    sha256 "591e0b621f1b4925a7d54683d6458923bd8ff3019808d17746857f4b9ca020d7"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.15-next/terrabuild-0.188.15-next-linux-arm64.zip"
+    sha256 "60d7c7d59729660d9887f97e0bc7b1b1c5de9a1b9b8e54ded747fed94f9c0b38"
   end
 
   def install
