@@ -2,26 +2,26 @@
 class TerrabuildNext < Formula
   desc "Seamless CI/CD tool for building and deploying monorepos."
   homepage "https://terrabuild.io"
-  version "0.188.17-next"
+  version "0.188.18-next"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.17-next/terrabuild-0.188.17-next-darwin-x64.zip"
-    sha256 "c3e1f5434391d63cf6fcaca4a39b5427a2d0911d89000343eac980920397c9ea"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.18-next/terrabuild-0.188.18-next-darwin-x64.zip"
+    sha256 "5e0ccfd25bae74780b2a44a160d1f791801e6446b0ce21a3f232a73902db43f6"
   end
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.17-next/terrabuild-0.188.17-next-darwin-arm64.zip"
-    sha256 "928f01af05482af1ba754dcb05aa7342fedb766102e1a1bc123732475617f890"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.18-next/terrabuild-0.188.18-next-darwin-arm64.zip"
+    sha256 "6bb1ea39d5195d4d4886811cb950ec1f2e7ac7e6cdb3aee6206676a988d9d8d3"
   end
 
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.17-next/terrabuild-0.188.17-next-linux-x64.zip"
-    sha256 "4cf7f37304f540ff9202d5a7074c7e8326976e6b6d8c872e3e38164b4f824875"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.18-next/terrabuild-0.188.18-next-linux-x64.zip"
+    sha256 "f9ecb5b194ef989993a62015d28be84ee446496dacdcf0c7235d5c77463adb04"
   end
 
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.17-next/terrabuild-0.188.17-next-linux-arm64.zip"
-    sha256 "9d08d4f11425990cba65b9eb7282a5258b988798d3359e36f61b8c5ef6e64017"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.18-next/terrabuild-0.188.18-next-linux-arm64.zip"
+    sha256 "5b7a6253152cae503de7833a6b1aca4bc5a7f66736da15abe6511b905d112eb0"
   end
 
   def install
