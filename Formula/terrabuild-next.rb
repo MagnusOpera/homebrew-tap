@@ -2,26 +2,26 @@
 class TerrabuildNext < Formula
   desc "Seamless CI/CD tool for building and deploying monorepos."
   homepage "https://terrabuild.io"
-  version "0.188.13-next"
+  version "0.188.14-next"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.13-next/terrabuild-0.188.13-next-darwin-x64.zip"
-    sha256 "09b379c8724f8315b6c58acfecb9ab850abff09e3f2de52a9b7c12b9ce78ba35"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.14-next/terrabuild-0.188.14-next-darwin-x64.zip"
+    sha256 "631ab1349473f597a296378f188cd329d5c0d49878c7501981ccbd2e4b11d44f"
   end
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.13-next/terrabuild-0.188.13-next-darwin-arm64.zip"
-    sha256 "3b3b1e888a6f9674f9e24049b8758c56aa87c407b5b1f709367d86df0aeb83f4"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.14-next/terrabuild-0.188.14-next-darwin-arm64.zip"
+    sha256 "70e9fa09d12be7479a3a20bcff860c0e5a37ad14f88250aba2e77a05a93f4479"
   end
 
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.13-next/terrabuild-0.188.13-next-linux-x64.zip"
-    sha256 "d16407dafc85dd2b95cf1ef1f1cf698473e23ef80d5dcf737667a3eb11ec8f5a"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.14-next/terrabuild-0.188.14-next-linux-x64.zip"
+    sha256 "e2f49bf3c778ac4403c6c2d5b682f21aae711676462b2d6402a458ef1452a900"
   end
 
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.13-next/terrabuild-0.188.13-next-linux-arm64.zip"
-    sha256 "35f5ef82880dc3f87229f34013478456f37a8d9725e1fbba7b2b0efa28539b0f"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.14-next/terrabuild-0.188.14-next-linux-arm64.zip"
+    sha256 "591e0b621f1b4925a7d54683d6458923bd8ff3019808d17746857f4b9ca020d7"
   end
 
   def install
