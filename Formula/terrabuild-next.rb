@@ -2,26 +2,26 @@
 class TerrabuildNext < Formula
   desc "Seamless CI/CD tool for building and deploying monorepos."
   homepage "https://terrabuild.io"
-  version "0.188.16-next"
+  version "0.188.17-next"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.16-next/terrabuild-0.188.16-next-darwin-x64.zip"
-    sha256 "ef205912f56e0191e5784c6d49f28d3c8d6cd4ec5b6ca26d5467f8d58f8d98e3"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.17-next/terrabuild-0.188.17-next-darwin-x64.zip"
+    sha256 "c3e1f5434391d63cf6fcaca4a39b5427a2d0911d89000343eac980920397c9ea"
   end
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.16-next/terrabuild-0.188.16-next-darwin-arm64.zip"
-    sha256 "1ea1f21c330eeeed71578d20c9ec632fa6fc7512a0b6602ca0abc8aa93691c32"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.17-next/terrabuild-0.188.17-next-darwin-arm64.zip"
+    sha256 "928f01af05482af1ba754dcb05aa7342fedb766102e1a1bc123732475617f890"
   end
 
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.16-next/terrabuild-0.188.16-next-linux-x64.zip"
-    sha256 "7c160dd4f3cbc420bf52837eb6b1000f58395d38c14847751b692939a1f12531"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.17-next/terrabuild-0.188.17-next-linux-x64.zip"
+    sha256 "4cf7f37304f540ff9202d5a7074c7e8326976e6b6d8c872e3e38164b4f824875"
   end
 
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.16-next/terrabuild-0.188.16-next-linux-arm64.zip"
-    sha256 "fee1a28dd8d4be30d480ec23fe030ff7a3efa1db99a5559bddb3267e3ab84b18"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.17-next/terrabuild-0.188.17-next-linux-arm64.zip"
+    sha256 "9d08d4f11425990cba65b9eb7282a5258b988798d3359e36f61b8c5ef6e64017"
   end
 
   def install
