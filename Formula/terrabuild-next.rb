@@ -2,26 +2,26 @@
 class TerrabuildNext < Formula
   desc "Seamless CI/CD tool for building and deploying monorepos."
   homepage "https://terrabuild.io"
-  version "0.188.23-next"
+  version "0.188.24-next"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.23-next/terrabuild-0.188.23-next-darwin-x64.zip"
-    sha256 "6083acb9ea8ee1b8cbc82db4ee65cdb4b9b3010f2cf4164ea6231247ca7892ab"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.24-next/terrabuild-0.188.24-next-darwin-x64.zip"
+    sha256 "27a329781e4a6db61d24020c9d4a112c38fc338525e58f0e582d74ccf5cc79a7"
   end
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.23-next/terrabuild-0.188.23-next-darwin-arm64.zip"
-    sha256 "913008832f4fda2fc2b7ceebfe1cefadb59e7db83233ff73183fac47a4bdc6d6"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.24-next/terrabuild-0.188.24-next-darwin-arm64.zip"
+    sha256 "b2cd051c40c86be10c99e933b9a100df69ab0e128833631c60e241fcff454635"
   end
 
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.23-next/terrabuild-0.188.23-next-linux-x64.zip"
-    sha256 "1a3f91b76b58c23d521c2d721051c99e6027b89443b8ca176d2e6ce1beb1f631"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.24-next/terrabuild-0.188.24-next-linux-x64.zip"
+    sha256 "6629317af22a8376ab62ec9fb9746bc8ae04585a26ae68b09f79a79832ca093e"
   end
 
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.23-next/terrabuild-0.188.23-next-linux-arm64.zip"
-    sha256 "b92000a5905920e6f3c41f99ca5d6131dc0d641722680b7d5f51546ddfc48cf6"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.24-next/terrabuild-0.188.24-next-linux-arm64.zip"
+    sha256 "224946cd51b0065e8a3aa48a1adc6485152c835a83ba88c1e9776aec0605f5c5"
   end
 
   def install
