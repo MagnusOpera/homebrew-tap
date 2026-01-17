@@ -2,26 +2,26 @@
 class TerrabuildNext < Formula
   desc "Seamless CI/CD tool for building and deploying monorepos."
   homepage "https://terrabuild.io"
-  version "0.188.22-next"
+  version "0.188.23-next"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.22-next/terrabuild-0.188.22-next-darwin-x64.zip"
-    sha256 "8ad5d5a18961882b4e7b84f08cd7fcd375459411ce8b75b408eba9eb73c26886"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.23-next/terrabuild-0.188.23-next-darwin-x64.zip"
+    sha256 "6083acb9ea8ee1b8cbc82db4ee65cdb4b9b3010f2cf4164ea6231247ca7892ab"
   end
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.22-next/terrabuild-0.188.22-next-darwin-arm64.zip"
-    sha256 "5cf0514ffaa6d4ad8fed2d7b671c4bbacd5b23cf5a340cd6095b5a36b11287b5"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.23-next/terrabuild-0.188.23-next-darwin-arm64.zip"
+    sha256 "913008832f4fda2fc2b7ceebfe1cefadb59e7db83233ff73183fac47a4bdc6d6"
   end
 
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.22-next/terrabuild-0.188.22-next-linux-x64.zip"
-    sha256 "daf30abc8521e05d7b9764ede711e3d1ecae6525dc253edd19bbe846fa8fd96c"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.23-next/terrabuild-0.188.23-next-linux-x64.zip"
+    sha256 "1a3f91b76b58c23d521c2d721051c99e6027b89443b8ca176d2e6ce1beb1f631"
   end
 
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.22-next/terrabuild-0.188.22-next-linux-arm64.zip"
-    sha256 "26062fbbfe1e3a4f55ecb2981c68e518d31ab5f87fff003c7e3272eb4b995b13"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.23-next/terrabuild-0.188.23-next-linux-arm64.zip"
+    sha256 "b92000a5905920e6f3c41f99ca5d6131dc0d641722680b7d5f51546ddfc48cf6"
   end
 
   def install
