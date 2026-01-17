@@ -2,26 +2,26 @@
 class TerrabuildNext < Formula
   desc "Seamless CI/CD tool for building and deploying monorepos."
   homepage "https://terrabuild.io"
-  version "0.188.21-next"
+  version "0.188.22-next"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.21-next/terrabuild-0.188.21-next-darwin-x64.zip"
-    sha256 "d9f98362e057dc3c3748d0baeb703d39de727c0d14a88ec7b73e48d4b0615684"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.22-next/terrabuild-0.188.22-next-darwin-x64.zip"
+    sha256 "8ad5d5a18961882b4e7b84f08cd7fcd375459411ce8b75b408eba9eb73c26886"
   end
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.21-next/terrabuild-0.188.21-next-darwin-arm64.zip"
-    sha256 "63e8f228b6098a79ce79bf144193efdc30c5b561cad192c43cb434954416233a"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.22-next/terrabuild-0.188.22-next-darwin-arm64.zip"
+    sha256 "5cf0514ffaa6d4ad8fed2d7b671c4bbacd5b23cf5a340cd6095b5a36b11287b5"
   end
 
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.21-next/terrabuild-0.188.21-next-linux-x64.zip"
-    sha256 "182dde728208b60d410ed3076bd7135fc8c603ed0ce53f8950a9fd903188c004"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.22-next/terrabuild-0.188.22-next-linux-x64.zip"
+    sha256 "daf30abc8521e05d7b9764ede711e3d1ecae6525dc253edd19bbe846fa8fd96c"
   end
 
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.21-next/terrabuild-0.188.21-next-linux-arm64.zip"
-    sha256 "a107942cf1837a7bb4ba82493b6fca062475bf1c9cf7945cd2469df9c44d71b4"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.22-next/terrabuild-0.188.22-next-linux-arm64.zip"
+    sha256 "26062fbbfe1e3a4f55ecb2981c68e518d31ab5f87fff003c7e3272eb4b995b13"
   end
 
   def install
