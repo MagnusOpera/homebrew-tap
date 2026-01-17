@@ -2,26 +2,26 @@
 class TerrabuildNext < Formula
   desc "Seamless CI/CD tool for building and deploying monorepos."
   homepage "https://terrabuild.io"
-  version "0.188.24-next"
+  version "0.188.25-next"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.24-next/terrabuild-0.188.24-next-darwin-x64.zip"
-    sha256 "27a329781e4a6db61d24020c9d4a112c38fc338525e58f0e582d74ccf5cc79a7"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.25-next/terrabuild-0.188.25-next-darwin-x64.zip"
+    sha256 "429a52b8fb2183ca44ca29ebecd56445011ead5e369d3ea7c6272cea4e744fc6"
   end
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.24-next/terrabuild-0.188.24-next-darwin-arm64.zip"
-    sha256 "b2cd051c40c86be10c99e933b9a100df69ab0e128833631c60e241fcff454635"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.25-next/terrabuild-0.188.25-next-darwin-arm64.zip"
+    sha256 "75201349f400d1ead25ec54422e39b98d847aa6304eb4f8f8124810d5e470f65"
   end
 
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.24-next/terrabuild-0.188.24-next-linux-x64.zip"
-    sha256 "6629317af22a8376ab62ec9fb9746bc8ae04585a26ae68b09f79a79832ca093e"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.25-next/terrabuild-0.188.25-next-linux-x64.zip"
+    sha256 "15f2a7ef08fdbd895fd3669a1547fff175930f2a97a9510986f0501c4f1e7b1f"
   end
 
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.24-next/terrabuild-0.188.24-next-linux-arm64.zip"
-    sha256 "224946cd51b0065e8a3aa48a1adc6485152c835a83ba88c1e9776aec0605f5c5"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.25-next/terrabuild-0.188.25-next-linux-arm64.zip"
+    sha256 "bc6366dc2ed478547477d1d39c87703661c420b5c8ebbb642bc0c35d80257d8a"
   end
 
   def install
