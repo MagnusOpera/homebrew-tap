@@ -2,26 +2,26 @@
 class TerrabuildNext < Formula
   desc "Seamless CI/CD tool for building and deploying monorepos."
   homepage "https://terrabuild.io"
-  version "0.188.25-next"
+  version "0.188.26-next"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.25-next/terrabuild-0.188.25-next-darwin-x64.zip"
-    sha256 "429a52b8fb2183ca44ca29ebecd56445011ead5e369d3ea7c6272cea4e744fc6"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.26-next/terrabuild-0.188.26-next-darwin-x64.zip"
+    sha256 "1b8db08b01db911496a1c61160380c815f0b6fb4761e6706ea6587403e26ddb6"
   end
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.25-next/terrabuild-0.188.25-next-darwin-arm64.zip"
-    sha256 "75201349f400d1ead25ec54422e39b98d847aa6304eb4f8f8124810d5e470f65"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.26-next/terrabuild-0.188.26-next-darwin-arm64.zip"
+    sha256 "8f5156b85401a756a8430e62588b2ada7301900973996bd0eb5d1c7e5f898d26"
   end
 
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.25-next/terrabuild-0.188.25-next-linux-x64.zip"
-    sha256 "15f2a7ef08fdbd895fd3669a1547fff175930f2a97a9510986f0501c4f1e7b1f"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.26-next/terrabuild-0.188.26-next-linux-x64.zip"
+    sha256 "f44ec07824c4150b565a79939410db94759872235127af3354eecdf0a45c2797"
   end
 
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.25-next/terrabuild-0.188.25-next-linux-arm64.zip"
-    sha256 "bc6366dc2ed478547477d1d39c87703661c420b5c8ebbb642bc0c35d80257d8a"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.188.26-next/terrabuild-0.188.26-next-linux-arm64.zip"
+    sha256 "8f2f978a4d616be6f81dc231439b6a7b9617e21b62da0dbd96baa9407c2fb9ea"
   end
 
   def install
