@@ -2,26 +2,26 @@
 class TerrabuildNext < Formula
   desc "Seamless CI/CD tool for building and deploying monorepos."
   homepage "https://terrabuild.io"
-  version "0.189.12-next"
+  version "0.189.13-next"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.12-next/terrabuild-0.189.12-next-darwin-x64.zip"
-    sha256 "718fbd96c9ad252fa664a8487193c8bcaa697771c91aa0a6bc7cfd1162d2357a"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.13-next/terrabuild-0.189.13-next-darwin-x64.zip"
+    sha256 "5ab0c14869d8f8736eddea461589639a54671efdaadfce0182912a0c6f14a77b"
   end
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.12-next/terrabuild-0.189.12-next-darwin-arm64.zip"
-    sha256 "a65c20f957a5e3d09d2f8a817bcf3313c9f2f1be14ec75e41f11178f788145d0"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.13-next/terrabuild-0.189.13-next-darwin-arm64.zip"
+    sha256 "fb13b53cb3d7cb51ca4348ad360ab113e5e630a9c9103c04fb5aa32ad2fb2fc0"
   end
 
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.12-next/terrabuild-0.189.12-next-linux-x64.zip"
-    sha256 "df937c1e055131a4ab5f6d738475e84d644e6f849a5cd589fa607397f1726ba2"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.13-next/terrabuild-0.189.13-next-linux-x64.zip"
+    sha256 "0bf4c4abe46a1dc2c1fb843db7442de9c97eb41117c56b5f203958540711fed1"
   end
 
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.12-next/terrabuild-0.189.12-next-linux-arm64.zip"
-    sha256 "b37976f95b9d3ade8c2b2ac1329038f8c6617be443f32e5f55af96512e9d29ef"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.13-next/terrabuild-0.189.13-next-linux-arm64.zip"
+    sha256 "1ced87c709917f44479f130b8647f23c2b84986a60200a709a4aa2e331611a4c"
   end
 
   def install
