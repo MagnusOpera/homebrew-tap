@@ -2,26 +2,26 @@
 class TerrabuildNext < Formula
   desc "Seamless CI/CD tool for building and deploying monorepos."
   homepage "https://terrabuild.io"
-  version "0.189.10-next"
+  version "0.189.11-next"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.10-next/terrabuild-0.189.10-next-darwin-x64.zip"
-    sha256 "fb3dc9ce2be2a746493d71cb68221edc3bc66aa297e1da1e3d2729b544c44667"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.11-next/terrabuild-0.189.11-next-darwin-x64.zip"
+    sha256 "226ff73540d2d368b9ea3e07cab83972683ca3c303da4c5fd14c99710e93e7ff"
   end
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.10-next/terrabuild-0.189.10-next-darwin-arm64.zip"
-    sha256 "a6a5e8b22fc9bc7936335bcf221fe75018e02205ec842fdc9993375ea0a00484"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.11-next/terrabuild-0.189.11-next-darwin-arm64.zip"
+    sha256 "9c0743172fbf53b50b81b22a4fb0373a2a14fafd37d8498a7fa5e7e8565a509e"
   end
 
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.10-next/terrabuild-0.189.10-next-linux-x64.zip"
-    sha256 "c8c0965a9bd9d9a7e3c54c682f89dbf30260c3ced10d307b7ca8db8b829e73d5"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.11-next/terrabuild-0.189.11-next-linux-x64.zip"
+    sha256 "770045ee418a7b95d45ee785ef75eaec1cbc43bfc8004c0f520bc6ebd23263c8"
   end
 
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.10-next/terrabuild-0.189.10-next-linux-arm64.zip"
-    sha256 "ae3907dc4fdc5fb3edd21c695f51b8cbf242a43d09cf7e31f3e3e4a04d6febb2"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.11-next/terrabuild-0.189.11-next-linux-arm64.zip"
+    sha256 "c9c5411cf58304b802524186e9c179d2cb334edf8641c59b06a256853b6c7f4a"
   end
 
   def install
