@@ -2,26 +2,26 @@
 class TerrabuildNext < Formula
   desc "Seamless CI/CD tool for building and deploying monorepos."
   homepage "https://terrabuild.io"
-  version "0.189.6-next"
+  version "0.189.10-next"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.6-next/terrabuild-0.189.6-next-darwin-x64.zip"
-    sha256 "98deabd56d30183af62caf8dba19fe93a6a0d6e77f4656c6224b62a793727874"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.10-next/terrabuild-0.189.10-next-darwin-x64.zip"
+    sha256 "fb3dc9ce2be2a746493d71cb68221edc3bc66aa297e1da1e3d2729b544c44667"
   end
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.6-next/terrabuild-0.189.6-next-darwin-arm64.zip"
-    sha256 "d75af77443695272445b73de820cbeeac8bf78f6fd50f50fb8fd5795648147c7"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.10-next/terrabuild-0.189.10-next-darwin-arm64.zip"
+    sha256 "a6a5e8b22fc9bc7936335bcf221fe75018e02205ec842fdc9993375ea0a00484"
   end
 
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.6-next/terrabuild-0.189.6-next-linux-x64.zip"
-    sha256 "54263878ecf5195e11f1211a3682cd4e5c7e529a98ce7c95cae5eec1fd5e4399"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.10-next/terrabuild-0.189.10-next-linux-x64.zip"
+    sha256 "c8c0965a9bd9d9a7e3c54c682f89dbf30260c3ced10d307b7ca8db8b829e73d5"
   end
 
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.6-next/terrabuild-0.189.6-next-linux-arm64.zip"
-    sha256 "7f4b48a3b252158f81dd6972eb6351284d727ca4b19e9049fae47a556169c0d2"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.10-next/terrabuild-0.189.10-next-linux-arm64.zip"
+    sha256 "ae3907dc4fdc5fb3edd21c695f51b8cbf242a43d09cf7e31f3e3e4a04d6febb2"
   end
 
   def install
