@@ -2,26 +2,26 @@
 class TerrabuildNext < Formula
   desc "Seamless CI/CD tool for building and deploying monorepos."
   homepage "https://terrabuild.io"
-  version "0.189.14-next"
+  version "0.189.15-next"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.14-next/terrabuild-0.189.14-next-darwin-x64.zip"
-    sha256 "80eeccbdf8fff7711530432c4893cafe0cacb17e72fc818b47a62211171814ac"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.15-next/terrabuild-0.189.15-next-darwin-x64.zip"
+    sha256 "b7cc865831226a0aa02d223a1b1c6ba2ae573d6dd378a69e59d4cab124ae6ba6"
   end
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.14-next/terrabuild-0.189.14-next-darwin-arm64.zip"
-    sha256 "f0ad945fa7c4a024c1bbfea65d2eb5e8bc3e30dd8628ec7ffcff64cbead51ad0"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.15-next/terrabuild-0.189.15-next-darwin-arm64.zip"
+    sha256 "80bcf90436b052463cdf65678944b2e08e35838256e72706c6ce7c827361a970"
   end
 
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.14-next/terrabuild-0.189.14-next-linux-x64.zip"
-    sha256 "afed7b7eadb96e06610fb8ac235c452c874e3f4f14c1ac159d4be59c3152411b"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.15-next/terrabuild-0.189.15-next-linux-x64.zip"
+    sha256 "0b58eae7c65d264ae051ae5d72c4d04f20b9fc283cfd813ff6ef8e10de0e2cbc"
   end
 
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.14-next/terrabuild-0.189.14-next-linux-arm64.zip"
-    sha256 "75f844f91974dba9ac0104e9180515671d9715ad09865e48dc49884f15e8e33d"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.15-next/terrabuild-0.189.15-next-linux-arm64.zip"
+    sha256 "b403405579b08c4503cc94fe2d8137237336a97c5707c3bcb384422d2047b14f"
   end
 
   def install
