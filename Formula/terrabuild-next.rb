@@ -2,26 +2,26 @@
 class TerrabuildNext < Formula
   desc "Seamless CI/CD tool for building and deploying monorepos."
   homepage "https://terrabuild.io"
-  version "0.189.13-next"
+  version "0.189.14-next"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.13-next/terrabuild-0.189.13-next-darwin-x64.zip"
-    sha256 "5ab0c14869d8f8736eddea461589639a54671efdaadfce0182912a0c6f14a77b"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.14-next/terrabuild-0.189.14-next-darwin-x64.zip"
+    sha256 "80eeccbdf8fff7711530432c4893cafe0cacb17e72fc818b47a62211171814ac"
   end
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.13-next/terrabuild-0.189.13-next-darwin-arm64.zip"
-    sha256 "fb13b53cb3d7cb51ca4348ad360ab113e5e630a9c9103c04fb5aa32ad2fb2fc0"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.14-next/terrabuild-0.189.14-next-darwin-arm64.zip"
+    sha256 "f0ad945fa7c4a024c1bbfea65d2eb5e8bc3e30dd8628ec7ffcff64cbead51ad0"
   end
 
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.13-next/terrabuild-0.189.13-next-linux-x64.zip"
-    sha256 "0bf4c4abe46a1dc2c1fb843db7442de9c97eb41117c56b5f203958540711fed1"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.14-next/terrabuild-0.189.14-next-linux-x64.zip"
+    sha256 "afed7b7eadb96e06610fb8ac235c452c874e3f4f14c1ac159d4be59c3152411b"
   end
 
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.13-next/terrabuild-0.189.13-next-linux-arm64.zip"
-    sha256 "1ced87c709917f44479f130b8647f23c2b84986a60200a709a4aa2e331611a4c"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.14-next/terrabuild-0.189.14-next-linux-arm64.zip"
+    sha256 "75f844f91974dba9ac0104e9180515671d9715ad09865e48dc49884f15e8e33d"
   end
 
   def install
