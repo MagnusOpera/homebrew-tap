@@ -2,26 +2,26 @@
 class TerrabuildNext < Formula
   desc "Seamless CI/CD tool for building and deploying monorepos."
   homepage "https://terrabuild.io"
-  version "0.189.15-next"
+  version "0.189.16-next"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.15-next/terrabuild-0.189.15-next-darwin-x64.zip"
-    sha256 "b7cc865831226a0aa02d223a1b1c6ba2ae573d6dd378a69e59d4cab124ae6ba6"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.16-next/terrabuild-0.189.16-next-darwin-x64.zip"
+    sha256 "4013ec50c5468627d3c5e6e2051452360aacb6a308114985f59ababa23a18dae"
   end
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.15-next/terrabuild-0.189.15-next-darwin-arm64.zip"
-    sha256 "80bcf90436b052463cdf65678944b2e08e35838256e72706c6ce7c827361a970"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.16-next/terrabuild-0.189.16-next-darwin-arm64.zip"
+    sha256 "3956aa474f47bb0b974807136fd3d4bf436f8632f1e94061032437099c558a72"
   end
 
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.15-next/terrabuild-0.189.15-next-linux-x64.zip"
-    sha256 "0b58eae7c65d264ae051ae5d72c4d04f20b9fc283cfd813ff6ef8e10de0e2cbc"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.16-next/terrabuild-0.189.16-next-linux-x64.zip"
+    sha256 "adcb69f327ffff9ceba6b0180d9a29adab9b0bbbe1ac5c51e293c1e2029e8b62"
   end
 
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.15-next/terrabuild-0.189.15-next-linux-arm64.zip"
-    sha256 "b403405579b08c4503cc94fe2d8137237336a97c5707c3bcb384422d2047b14f"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.16-next/terrabuild-0.189.16-next-linux-arm64.zip"
+    sha256 "b5be6f29e16d4c477c689b29973631c4982711bd6ea158ced74235b03a86966a"
   end
 
   def install
