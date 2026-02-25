@@ -2,26 +2,26 @@
 class TerrabuildNext < Formula
   desc "Seamless CI/CD tool for building and deploying monorepos."
   homepage "https://terrabuild.io"
-  version "0.189.16-next"
+  version "0.189.17-next"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.16-next/terrabuild-0.189.16-next-darwin-x64.zip"
-    sha256 "4013ec50c5468627d3c5e6e2051452360aacb6a308114985f59ababa23a18dae"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.17-next/terrabuild-0.189.17-next-darwin-x64.zip"
+    sha256 "74913a81cf205b240428e17bd3cd8f5faf0344226568338ecaa1ee6b7bb3d0c4"
   end
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.16-next/terrabuild-0.189.16-next-darwin-arm64.zip"
-    sha256 "3956aa474f47bb0b974807136fd3d4bf436f8632f1e94061032437099c558a72"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.17-next/terrabuild-0.189.17-next-darwin-arm64.zip"
+    sha256 "da2f7845ebee87c38a07f274c2efb60179288582ac0ed58aa9f0959e3aac58df"
   end
 
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.16-next/terrabuild-0.189.16-next-linux-x64.zip"
-    sha256 "adcb69f327ffff9ceba6b0180d9a29adab9b0bbbe1ac5c51e293c1e2029e8b62"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.17-next/terrabuild-0.189.17-next-linux-x64.zip"
+    sha256 "30819ab860defbab632f36904d4666cf9ae3a7660a15b7c8b1d2bf4862c643e5"
   end
 
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.16-next/terrabuild-0.189.16-next-linux-arm64.zip"
-    sha256 "b5be6f29e16d4c477c689b29973631c4982711bd6ea158ced74235b03a86966a"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.17-next/terrabuild-0.189.17-next-linux-arm64.zip"
+    sha256 "26e0eed5502726d684a15851b41cc3723698eaeee33cbc3565d6c4eed7911a1a"
   end
 
   def install
