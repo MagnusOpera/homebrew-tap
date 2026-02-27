@@ -2,26 +2,26 @@
 class TerrabuildNext < Formula
   desc "Seamless CI/CD tool for building and deploying monorepos."
   homepage "https://terrabuild.io"
-  version "0.189.18-next"
+  version "0.189.21-next"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.18-next/terrabuild-0.189.18-next-darwin-x64.zip"
-    sha256 "d3d40f980b7d755c4cb3d50dc33b2ce8226c54b94ddfc95ff0b6d343642d709c"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.21-next/terrabuild-0.189.21-next-darwin-x64.zip"
+    sha256 "8e10e5f4ebd82e7872572db1de009f3aaa5f88951063f117fa29c213cb971e1a"
   end
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.18-next/terrabuild-0.189.18-next-darwin-arm64.zip"
-    sha256 "64f8add36b1356dea8a9cb6fbc8906585e1443ab8ea6df4df1a9d49875efa9f7"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.21-next/terrabuild-0.189.21-next-darwin-arm64.zip"
+    sha256 "776061985311ae7f9fc3d075db9da6a2d8832d7fa8af3ec0e55141840015e293"
   end
 
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.18-next/terrabuild-0.189.18-next-linux-x64.zip"
-    sha256 "39801bebb194d4ba0eb95814b057e2c7db2f145705305bebef65dffcda5ccebd"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.21-next/terrabuild-0.189.21-next-linux-x64.zip"
+    sha256 "49c34f02d30c5d719ac39b6ff4fb265ece524215bcb8bead5d3b28528d7de16b"
   end
 
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.18-next/terrabuild-0.189.18-next-linux-arm64.zip"
-    sha256 "29e8f21299673590eaa5549cd997e307bef5a053ae2c65c186c437b2a5d364c5"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.189.21-next/terrabuild-0.189.21-next-linux-arm64.zip"
+    sha256 "0d550f81a609469ecfc8851f5c404d77019e99f54aab21ab9b3df9fdf8913664"
   end
 
   def install
