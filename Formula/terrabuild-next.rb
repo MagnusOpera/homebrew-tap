@@ -2,26 +2,26 @@
 class TerrabuildNext < Formula
   desc "Seamless CI/CD tool for building and deploying monorepos."
   homepage "https://terrabuild.io"
-  version "0.190.1-next"
+  version "0.190.2-next"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.190.1-next/terrabuild-0.190.1-next-darwin-x64.zip"
-    sha256 "17554f67d86c221f0b0941cd4ebf5c06e956fa037e1657c9090136fc74640bd7"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.190.2-next/terrabuild-0.190.2-next-darwin-x64.zip"
+    sha256 "5011510d1a24a9a96bc5dd1054f924689b36dbaaa84856d03a520f1be8e1e018"
   end
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.190.1-next/terrabuild-0.190.1-next-darwin-arm64.zip"
-    sha256 "5fbd0770bad580d1402cb5e60d2905ee90a762f52612c840068d44cd8d1dfc15"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.190.2-next/terrabuild-0.190.2-next-darwin-arm64.zip"
+    sha256 "322da866b4994225042065f1484413bd8b07a04cec1ff1584ecde427d73cc20d"
   end
 
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.190.1-next/terrabuild-0.190.1-next-linux-x64.zip"
-    sha256 "a2bd1155aa5b059b5ba1853841c3433756247906bbb484b94c2cfdb1cb6c64dc"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.190.2-next/terrabuild-0.190.2-next-linux-x64.zip"
+    sha256 "00ff4dcf9403e4ead6e7c83aff542b0805cdc6d83546e07b07935cba44230152"
   end
 
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.190.1-next/terrabuild-0.190.1-next-linux-arm64.zip"
-    sha256 "85b3654b849956f6591d76c5257ededc6ebe728f84b48ac1cfbdd388b2ca0495"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.190.2-next/terrabuild-0.190.2-next-linux-arm64.zip"
+    sha256 "a8c45d4c86f0c4793de3dc2861699dbd176d9f8b42110261f954c76217ecafbf"
   end
 
   def install
