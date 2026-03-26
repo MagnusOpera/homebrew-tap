@@ -2,13 +2,13 @@
 cask "featstudio" do
   arch arm: "arm64", intel: "x64"
 
-  version "0.1.0"
-  sha256 arm: "08af8d909ce13f1d065eb92bfb8444f629751791e0e3d9058d6585ee35d03b6f", intel: "55121fb9643abd4eebef27eb9c787990727fcfd711cf6183bbe229a3d9212590"
+  version "0.1.1"
+  sha256 arm: "b5617dd0a1c8555c4e445a4c607107ea6956547132d593630e3fc22899269655", intel: "30cff0979d4896d97882b7903c8fccf338a45b825bdccab6c1a0deef47938959"
 
   if Hardware::CPU.arm?
-    url "https://github.com/MagnusOpera/FeatStudio/releases/download/v0.1.0/FeatStudio-0.1.0-mac-arm64.zip"
+    url "https://github.com/MagnusOpera/FeatStudio/releases/download/v0.1.1/FeatStudio-0.1.1-mac-arm64.zip"
   else
-    url "https://github.com/MagnusOpera/FeatStudio/releases/download/v0.1.0/FeatStudio-0.1.0-mac-x64.zip"
+    url "https://github.com/MagnusOpera/FeatStudio/releases/download/v0.1.1/FeatStudio-0.1.1-mac-x64.zip"
   end
 
   name "FeatStudio"
