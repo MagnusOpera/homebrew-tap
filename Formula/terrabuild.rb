@@ -6,22 +6,22 @@ class Terrabuild < Formula
 
   if OS.mac? && Hardware::CPU.intel?
     url "https://github.com/magnusopera/terrabuild/releases/download/0.193.6/terrabuild-0.193.6-darwin-x64.zip"
-    sha256 "94ed1b7faef93149a8f50eb5d77065f4e9f627407fd9e6c869ade084988255fe"
+    sha256 "749e618d7b8205e69cddbc7748012c9626bdd8c06e4e443f161ee8a6cb8a3c0a"
   end
 
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/magnusopera/terrabuild/releases/download/0.193.6/terrabuild-0.193.6-darwin-arm64.zip"
-    sha256 "2f7a3f255c1a1096b296970da84f1ed0ccb74e4b242bab2c7282478a05cc4ba6"
+    sha256 "68ec47503eb5c2aafadd389651918bf0394ffbde9f796fc3662a3367456fd9c9"
   end
 
   if OS.linux? && Hardware::CPU.intel?
     url "https://github.com/magnusopera/terrabuild/releases/download/0.193.6/terrabuild-0.193.6-linux-x64.zip"
-    sha256 "e948366f071422dab7ebdcec2ab51e42d27a42472cf5eeea740347e29368e76d"
+    sha256 "be0c1e90bf323ce4a438140b524c94feafdefd00a233b46812ab6818f339b351"
   end
 
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
     url "https://github.com/magnusopera/terrabuild/releases/download/0.193.6/terrabuild-0.193.6-linux-arm64.zip"
-    sha256 "aa553d2fde4451e845ca0bb9761d0a9900c8e12f6d53a127a1f3b7f9f18afd38"
+    sha256 "4558fccb3cbd74d481863d3f04847a96b8c7c5b66981615ef4039a69b0189a49"
   end
 
   def install
