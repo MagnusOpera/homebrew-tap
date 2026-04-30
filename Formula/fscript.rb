@@ -2,26 +2,26 @@
 class Fscript < Formula
   desc "Embeddable F#/ML-style scripting language and CLI"
   homepage "https://github.com/magnusopera/fscript"
-  version "0.66.0"
+  version "0.67.1"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/MagnusOpera/FScript/releases/download/0.66.0/fscript-0.66.0-darwin-x64.zip"
-    sha256 "6acaa2e0c2533d1f9e509db04ee28f620ce36e842ff6d8fa9831ab26ff8115a2"
+    url "https://github.com/MagnusOpera/FScript/releases/download/0.67.1/fscript-0.67.1-darwin-x64.zip"
+    sha256 "5f1775d75188f67004e52dd00f143419d6ce172a0cf3b536589ef76767c94e83"
   end
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/MagnusOpera/FScript/releases/download/0.66.0/fscript-0.66.0-darwin-arm64.zip"
-    sha256 "e40ad247d8361dbe6426f0234ca9c238dd78c3c5a133916fec62c07682aceee2"
+    url "https://github.com/MagnusOpera/FScript/releases/download/0.67.1/fscript-0.67.1-darwin-arm64.zip"
+    sha256 "b337e9816476e576b5885b5a4792d35943cd9ce76a4cdfc506b407d52a6ff54c"
   end
 
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/MagnusOpera/FScript/releases/download/0.66.0/fscript-0.66.0-linux-x64.zip"
-    sha256 "d8857a41f25e9f920fad48470347e487b9bd6cbfb8c5c9e5ac801cfd08576b84"
+    url "https://github.com/MagnusOpera/FScript/releases/download/0.67.1/fscript-0.67.1-linux-x64.zip"
+    sha256 "bfd7e7ae9149f6a20048bc07aff1acebe78277a1a2a1aa04cf15b04d3cba6c89"
   end
 
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/MagnusOpera/FScript/releases/download/0.66.0/fscript-0.66.0-linux-arm64.zip"
-    sha256 "72f175e4252a51b2a9d974cc8bae5eaf56fd6f37ebb12aa3886d4760ca4634a0"
+    url "https://github.com/MagnusOpera/FScript/releases/download/0.67.1/fscript-0.67.1-linux-arm64.zip"
+    sha256 "24494f391e5333d75731daee8795af7f545d7e18fe11f400ef3418364176b5e5"
   end
 
   def install
