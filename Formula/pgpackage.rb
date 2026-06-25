@@ -2,21 +2,21 @@
 class Pgpackage < Formula
   desc "Go-first PostgreSQL schema packaging CLI"
   homepage "https://github.com/MagnusOpera/pgpackage"
-  version "0.1.0"
+  version "0.2.1"
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/MagnusOpera/pgpackage/releases/download/0.1.0/pgpackage-0.1.0-darwin-arm64.zip"
-    sha256 "d06bf1bd72530315541359236801d05fb35d648619433f013d0dde73710dd8a8"
+    url "https://github.com/MagnusOpera/pgpackage/releases/download/0.2.1/pgpackage-0.2.1-darwin-arm64.zip"
+    sha256 "288ccd50b9c0b4de33e7a427b76949822c59f30487453500a3c12594e31a168e"
   end
 
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/MagnusOpera/pgpackage/releases/download/0.1.0/pgpackage-0.1.0-linux-arm64.zip"
-    sha256 "2dae11af633a7dbc5ff85e4daacbe7df3278f7fae452797d84319cdd568b4567"
+    url "https://github.com/MagnusOpera/pgpackage/releases/download/0.2.1/pgpackage-0.2.1-linux-arm64.zip"
+    sha256 "8d98d2870e74e86dc4e777ee2d9a25696510a1b4f5fe14063f8c17046f208b97"
   end
 
   if OS.linux? && Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-    url "https://github.com/MagnusOpera/pgpackage/releases/download/0.1.0/pgpackage-0.1.0-linux-x64.zip"
-    sha256 "c23137e243357b3fb984ed29844a7d837a56002a92430c294fc6f90753ed270b"
+    url "https://github.com/MagnusOpera/pgpackage/releases/download/0.2.1/pgpackage-0.2.1-linux-x64.zip"
+    sha256 "e50b9b8a0f5d6e97b96a1620b656a3eca8ab94e68e020eb8ec85c1b03f45e416"
   end
 
   def install
