@@ -2,21 +2,21 @@
 class D1pac < Formula
   desc "Desired-state schema packaging CLI for Cloudflare D1"
   homepage "https://github.com/MagnusOpera/d1pac"
-  version "0.0.2"
+  version "0.0.3"
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/MagnusOpera/d1pac/releases/download/0.0.2/d1pac-0.0.2-darwin-arm64.zip"
-    sha256 "be5a46a827f1b66710d19c0f05973a30afcdc6cc9b956dec5b9cfcf8e7fa29f1"
+    url "https://github.com/MagnusOpera/d1pac/releases/download/0.0.3/d1pac-0.0.3-darwin-arm64.zip"
+    sha256 "df9b51f64419c14e9549f0739aea43ed57cf699aeb0e877f2e2628b984a3ccc2"
   end
 
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/MagnusOpera/d1pac/releases/download/0.0.2/d1pac-0.0.2-linux-arm64.zip"
-    sha256 "08f930a7765f8f1e4990e92c09e5e069fbf0b248b3da298a97ea4ab72ec3306d"
+    url "https://github.com/MagnusOpera/d1pac/releases/download/0.0.3/d1pac-0.0.3-linux-arm64.zip"
+    sha256 "50829cef534a03ae4fe230584498b38cfd4a436fa21025dd73e7cd8663d93b7a"
   end
 
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/MagnusOpera/d1pac/releases/download/0.0.2/d1pac-0.0.2-linux-x64.zip"
-    sha256 "0827a58a15886d50194fd0f200737f303c8b7cfbb33e951f6f279b1fb6f76f39"
+    url "https://github.com/MagnusOpera/d1pac/releases/download/0.0.3/d1pac-0.0.3-linux-x64.zip"
+    sha256 "04a56dc04d229620247c37a328ba530f8e2f920deb6188d606ad94b00d89b052"
   end
 
   def install
