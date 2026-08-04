@@ -2,21 +2,21 @@
 class TerrabuildNext < Formula
   desc "Seamless CI/CD tool for building and deploying monorepos."
   homepage "https://terrabuild.io"
-  version "0.197.3-next"
+  version "0.197.4-next"
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.197.3-next/terrabuild-0.197.3-next-darwin-arm64.zip"
-    sha256 "d5a43a0d120f7663a63839af0f5e7bfbe043a84090905726cca10a728ffeaa6b"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.197.4-next/terrabuild-0.197.4-next-darwin-arm64.zip"
+    sha256 "cfbe7b9f1ef21895fe07ffdc3ec4548deed8f245d3113e32ed46b31424caa55d"
   end
 
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.197.3-next/terrabuild-0.197.3-next-linux-x64.zip"
-    sha256 "9276d6dcbfecdd52605bfc2e2c1f25377619c120c2615d08a927a79b9f2ceeed"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.197.4-next/terrabuild-0.197.4-next-linux-x64.zip"
+    sha256 "6c0c4ba3720a45f902b6611a952b5c223e7987ec1e3b94cb1a5232aba11bb8ce"
   end
 
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/magnusopera/terrabuild/releases/download/0.197.3-next/terrabuild-0.197.3-next-linux-arm64.zip"
-    sha256 "e21cfba9bce0c20bdc8142f3ecf5499f514d011f473d2587266ffd28b9e670a8"
+    url "https://github.com/magnusopera/terrabuild/releases/download/0.197.4-next/terrabuild-0.197.4-next-linux-arm64.zip"
+    sha256 "48b5c68de1ccd06230cd9364b7f76018b5144162c04b35515b4037a043efacff"
   end
 
   def install
