@@ -2,21 +2,21 @@
 class D1pac < Formula
   desc "Desired-state schema packaging CLI for Cloudflare D1"
   homepage "https://github.com/MagnusOpera/starpac"
-  version "0.6.1"
+  version "0.6.3"
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/MagnusOpera/starpac/releases/download/v0.6.1/d1pac-0.6.1-darwin-arm64.zip"
-    sha256 "92d052cb329de1485a779f136de0a6504b56a6c016607b4827733d668c013744"
+    url "https://github.com/MagnusOpera/starpac/releases/download/v0.6.3/d1pac-0.6.3-darwin-arm64.zip"
+    sha256 "bc28800e1e81785ab77aced4b5e406c4df830c3ee1bf7d87dea98166efb761f3"
   end
 
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/MagnusOpera/starpac/releases/download/v0.6.1/d1pac-0.6.1-linux-arm64.zip"
-    sha256 "e3f507f64b1597f453b153d2bc242a9b232037a75631f972d0f170095118d077"
+    url "https://github.com/MagnusOpera/starpac/releases/download/v0.6.3/d1pac-0.6.3-linux-arm64.zip"
+    sha256 "2d99a3341afde96b86019c37217e9dee553d47482745d80ec002af4620889b24"
   end
 
   if OS.linux? && Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-    url "https://github.com/MagnusOpera/starpac/releases/download/v0.6.1/d1pac-0.6.1-linux-x64.zip"
-    sha256 "b280a434dceb1053ae9cc390f7bcd00dba712d9f59716a81302ffd15a7e830cd"
+    url "https://github.com/MagnusOpera/starpac/releases/download/v0.6.3/d1pac-0.6.3-linux-x64.zip"
+    sha256 "504b8e48552e0a209e5dee48cde035492046e29eec7c813fdb3a52e3dd9d6c43"
   end
 
   def install
