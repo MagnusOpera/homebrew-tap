@@ -2,21 +2,21 @@
 class Pgpac < Formula
   desc "Go-first PostgreSQL schema packaging CLI"
   homepage "https://github.com/MagnusOpera/starpac"
-  version "0.7.1"
+  version "0.7.5"
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/MagnusOpera/starpac/releases/download/v0.7.1/pgpac-0.7.1-darwin-arm64.zip"
-    sha256 "143e6c4ccd78fef29f6eba0533c007f180d186b97cfd42e09e428186479def7b"
+    url "https://github.com/MagnusOpera/starpac/releases/download/v0.7.5/pgpac-0.7.5-darwin-arm64.zip"
+    sha256 "2663d5b79b552ddd27debf39172aaf187fe09eaa94816941083dbb4c4df2083c"
   end
 
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/MagnusOpera/starpac/releases/download/v0.7.1/pgpac-0.7.1-linux-arm64.zip"
-    sha256 "fb25bbab82415951ba6f25873496aa0c05e5ebbb47108df4934a4e65599159c5"
+    url "https://github.com/MagnusOpera/starpac/releases/download/v0.7.5/pgpac-0.7.5-linux-arm64.zip"
+    sha256 "63ab50375a88d2a333eade10032f609ecb4f62868c2ddd05f1665797cd912ddc"
   end
 
   if OS.linux? && Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-    url "https://github.com/MagnusOpera/starpac/releases/download/v0.7.1/pgpac-0.7.1-linux-x64.zip"
-    sha256 "3fe823dfb2adfed69e2d0c3cf94859e68b79e187a5be38fda7664d58ffd824b7"
+    url "https://github.com/MagnusOpera/starpac/releases/download/v0.7.5/pgpac-0.7.5-linux-x64.zip"
+    sha256 "1a19a1733fca54cbdde6068b2389f2978ccee78646d545a546431b28eac66f3d"
   end
 
   def install
