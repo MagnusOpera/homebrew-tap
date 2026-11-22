@@ -2,21 +2,21 @@
 class Fscript < Formula
   desc "Embeddable F#/ML-style scripting language and CLI"
   homepage "https://github.com/FScriptLang/FScript"
-  version "0.95.3"
+  version "0.95.5"
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/FScriptLang/FScript/releases/download/v0.95.3/fscript-0.95.3-darwin-arm64.zip"
-    sha256 "6fc3743fb99d0ffad54264c239d6dc5c741617308558aafb1de990445ddc87db"
+    url "https://github.com/FScriptLang/FScript/releases/download/v0.95.5/fscript-0.95.5-darwin-arm64.zip"
+    sha256 "4877ba40ec14373978896e48540c00f5c52fa9868e33b3fc386e214f4e3e04f4"
   end
 
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/FScriptLang/FScript/releases/download/v0.95.3/fscript-0.95.3-linux-x64.zip"
-    sha256 "100f0d642b410c67db840784e90398a9ede8982117189b42971ecc4f939d721e"
+    url "https://github.com/FScriptLang/FScript/releases/download/v0.95.5/fscript-0.95.5-linux-x64.zip"
+    sha256 "2c30a4c81f6e6f72eb0ac3dcdc6c22676cc316648fb03a58b567d9a95c936d8a"
   end
 
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/FScriptLang/FScript/releases/download/v0.95.3/fscript-0.95.3-linux-arm64.zip"
-    sha256 "75f79badaa858f90bf4ae6bc96c458f79a2269772aa71a6457c3e1bd2bf0ebe9"
+    url "https://github.com/FScriptLang/FScript/releases/download/v0.95.5/fscript-0.95.5-linux-arm64.zip"
+    sha256 "6896fb393094ae91c2ac9eccc37fa2f4d131f08f6f5b4c9088da892a9177b8a6"
   end
 
   def install
